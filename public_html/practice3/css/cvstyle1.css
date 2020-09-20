@@ -13,9 +13,8 @@ and open the template in the editor.
     font-family: arial;
 
 }
-h1, h2 {color:#C45911; }
-
-h1 {
+h1, h2 {
+    color:#C45911; 
     font-family: arial black;
     font-weight: bold;
 }
@@ -48,7 +47,7 @@ h1 > span {
 .block2 { 
     float: left;
     padding: 3px;
-    border-bottom: 1px solid black;
+
     margin: 5px 1vw 5px 5vw;
 
 
@@ -98,4 +97,34 @@ img {
     [class*="col-"] {
         width: 100%;
     }
+}
+
+.block3, .block4 {
+    padding: 10px;
+    border-top: 1px solid black;
+    float: left;
+    margin: 0px;
+    line-height: 1.1;
+
+}
+
+h3 {
+    line-height: 1.8;
+    
+}
+
+.block3 {
+    border-right: 1px solid black;
+    margin: 0px 0vw 0px 5vw;
+
+}
+
+.rightalign {
+    margin-top: 30px;
+    text-align: right;
+
+}
+
+.topmargin {
+margin-top: 20px;
 }
