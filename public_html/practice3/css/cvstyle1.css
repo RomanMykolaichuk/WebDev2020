@@ -47,7 +47,7 @@ h1 > span {
 .block2 { 
     float: left;
     padding: 3px;
-
+    font-size: 110%;
     margin: 5px 1vw 5px 5vw;
 
 
@@ -99,7 +99,7 @@ img {
     }
 }
 
-.block3, .block4 {
+.block3 {
     padding: 10px;
     border-top: 1px solid black;
     float: left;
@@ -110,10 +110,10 @@ img {
 
 h3 {
     line-height: 1.8;
-    
+
 }
 
-.block3 {
+.block4 {
     border-right: 1px solid black;
     margin: 0px 0vw 0px 5vw;
 
@@ -126,5 +126,5 @@ h3 {
 }
 
 .topmargin {
-margin-top: 20px;
+    margin-top: 20px;
 }
