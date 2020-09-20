@@ -122,6 +122,8 @@ h3 {
 .rightalign {
     margin-top: 20px;
     text-align: right;
+    font-style: italic;
+    font-size:90%;
 
 }
 
