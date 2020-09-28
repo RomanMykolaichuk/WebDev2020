@@ -27,6 +27,9 @@ function b() {
         return x;
     }
 
+function a() {
+        return x;
+    }
 //x=10;
 //console.log(x);
 
@@ -58,11 +61,11 @@ if (true && 1 && "Any text" && -1 && "false"){
     x=true;
 };
 
-if (false || 0 || "" || NaN || undefine || null){
+if (false || 0 || "" || NaN || undefined || null){
     x=true;
 } else {
     
-  x=11;  
+  x=false;  
 }
 
 //{
