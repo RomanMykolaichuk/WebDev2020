@@ -3,13 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-function a(){
-  
-   
+function a(){   
  
  return "Ok!";
 }
-
 //Scope
 
 //String concat
@@ -26,11 +23,9 @@ function a(){
 
 // default values handling
 
-
 //object creation ways
 
 //arrays creation ways, length
-
 
 //foreach
 
