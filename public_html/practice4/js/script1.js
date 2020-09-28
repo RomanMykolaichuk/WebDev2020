@@ -74,15 +74,109 @@ if (false || 0 || "" || NaN || undefined || null){
 
 // for loop
 
+// цикл (визначаємо суму перших 10 натуральних чисел)
+x=0;
+
+for (var i=0; i<=10; i++){
+    
+x+=i;    
+}
 
 
-// default values handling
+//виводимо результат функції відповідно до значення у полі вводу 
+function a() { return document.getElementById('fname').value;}
 
 //object creation ways
 
+//створюємо об'єкт
+//варіант 1
+var some_object = new Object();
+
+//визначаємо поля об'єкту
+some_object.name="some_name";
+some_object.weight=25;
+
+//звертаємося до полів об'єкту
+x=some_object['name'];
+x=some_object.name;
+
+
+
+
+
+
+x= "";
+//цикл для "пробігання" по полям об'єкту(foreach)
+for (some_var in some_object){
+  x+=some_var+" = "+some_object[some_var]+", ";     
+}
+
+function a(){return x;}
+
+
+//варіант 2
+var some_object = {
+    name: "some_name",
+    weight: 25
+};
+
+//також можливо в об'єкті зберігати вкладені об'єкти та інші структури (масиви функції тощо)
+
+var another_obj = {
+    nested_obj: {name:"n",height:15},
+    nested_funct: function(arg1){return arg1;},
+    nested_array: [1,2,3,4,5],
+    some_field: "field_value"
+};
+
+
 //arrays creation ways, length
 
-//foreach
+//так само з масивами (взято з курсу на coursera https://www.coursera.org/learn/html-css-javascript-for-web-developers/home/welcome)
+var array = new Array();
+array[0] = "Yaakov";
+array[1] = 2;
+array[2] = function (name) {
+  console.log("Hello " + name);
+};
+array[3] = {course: " HTML, CSS & JS"};
+
+console.log(array);
+array[2](array[0]);
+console.log(array[3].course);
+
+
+// Short hand array creation
+var names = ["Yaakov", "John", "Joe"];
+console.log(names);
+
+for (var i = 0; i < names.length; i++) {
+  console.log("Hello " + names[i]);
+}
+
+names[100] = "Jim";
+for (var i = 0; i < names.length; i++) {
+  console.log("Hello " + names[i]);
+}
+
+//foreach з того ж курсу 
+var names2 = ["Yaakov", "John", "Joe"];
+
+var myObj = {
+  name: "Yaakov",
+  course: "HTML/CSS/JS",
+  platform: "Courera"
+};
+for (var prop in myObj) {
+  console.log(prop + ": " + myObj[prop]);
+}
+
+for (var name in names2) {
+  console.log("Hello " + names2[name]);
+}
+
+//наступні питання розглянемо на лекції 29.09.2020
+
 
 //fake namespaces
 
