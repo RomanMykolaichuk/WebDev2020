@@ -11,6 +11,11 @@ document.addEventListener("DOMContentLoaded",
                         .sendGetRequest("data/name.txt",
                                 function (request) {
                                 var name = request.responseText;
+                                document.querySelector("#content")
+                                        .innerHTML = "<h2>Hello " + name + "!</h2>";
                                 });
+                                
                 });
+                
+                
             });
