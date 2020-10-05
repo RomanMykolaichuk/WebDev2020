@@ -2,22 +2,24 @@
 document.addEventListener("DOMContentLoaded",
         function (event) {
 
-            // Unobtrusive event binding
-            document.querySelector(".second_button")
-                    .addEventListener("click", function () {
-        
-                        // Call server to get the name
-                        $ajaxUtils
-                                .sendGetRequest("https://reqres.in/api/products/3",
-                                        function (request) {
-                                            console.log(request.responseText);
-                                            var obj = JSON.parse(request.responseText);
-
-                                            document.querySelector("#footer")
-                                                    .innerHTML = obj.data.name;
-                                        });
+        // Unobtrusive event binding
+        document.querySelector(".button2")
+                .addEventListener("click", function () {
 
 
-                    }
-                    );
-        });
+
+
+
+                // Call server to get the name
+                $ajaxUtils
+                        .sendGetRequest("https://reqres.in/api/products/3",
+                                function (request) {
+                                console.log(request.responseText);
+                                        var personObject = JSON.parse(request.responseText);
+                                        document.querySelector("#content")
+                                        .innerHTML = "<h2>Hello " + personObject.data['first_name']
+                                        + ' ' + personObject.data['last_name'] + "!</h2>";
+                                });
+                });
+        }
+);
